@@ -1,5 +1,4 @@
-//최댓값 찾기
-#define _CRT_SECURE_NO_WARNINGS
+//1.1 최댓값 찾기
 #include <stdio.h>
 
 int main(void) {
