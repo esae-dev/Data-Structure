@@ -14,7 +14,7 @@ int main(void) {
     clock_t start, finish; //CPU 시간 측정할 때 쓰는 자료형
     double duration;
 
-    printf("1부터 10까지의 합은 %d입니다.\n", calc_sum(10)); // 그냥 테스트 함 하는 용도
+    printf("1부터 10까지의 합은 %d입니다.\n", calc_sum(10)); // 그냥 테스트 함 하는 용도(시간은 안재고, 그냥 합 한 번 구해보기)
 
     start = clock(); //시작 시간 저장
     calc_sum(100000000);
