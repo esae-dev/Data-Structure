@@ -1,6 +1,6 @@
-﻿// 3.2 스택의 활용
+﻿// 3.2 스택의 활용(85p)
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h> //exit 쓰려면 필요함(메모리, 종료, 변환, 난수같은 표준 기능)
 
 #define MAX_SIZE 100
 typedef int Element; //그냥 여러번 쓰려고 이 친구 묶어버린거임
@@ -20,4 +20,6 @@ int main(void) {
     while (!is_empty()) {
         printf(" %d", pop()); //empty 될 때까지 pop
     } printf("\n");
+
+    return 0;
 }

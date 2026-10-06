@@ -1,5 +1,5 @@
-//3.1 배열을 이용한 스택의 구현
-Element data[MAX_SIZE]; //int data[MAX_SIZE]랑도 같음. 그냥 Element 써서 push, pop, peek 쓰기 편하게 해둔 것
+﻿// 3.1 배열을 이용한 스택의 구현(84p)
+Element data[MAX_SIZE]; //int data[MAX_SIZE]랑도 같음. 그냥 Element 써서 push, pop, peek 쓰기 편하게 해둔 것(단, 구조체 쓰이는 3.4부터는 다름)
 int top;
 
 void error(char str[]) {
