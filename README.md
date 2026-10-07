@@ -1,2 +1,5 @@
 # Data-Structure
 2026-2 (대학 2학년 2학기)
+
+
+2장 birthday.c 나중에 체크

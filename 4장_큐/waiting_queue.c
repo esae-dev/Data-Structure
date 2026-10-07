@@ -1,4 +1,4 @@
-﻿// 4.3 큐에 웨이팅 정보 저장하기
+﻿// 4.3 큐에 웨이팅 정보 저장하기(131p)
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -1,4 +1,4 @@
-// 4.4 큐를 이용한 피보나치 수 구하기
+﻿// 4.4 큐를 이용한 피보나치 수 구하기(132p)
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -24,7 +24,7 @@ int fibonacci(int n) {
 int main(void) {
     printf("피보나치 수열: ");
     for(int i=0; i<16; i++) {
-        printf("%d,", fibonacci(i));
+        printf("%d, ", fibonacci(i));
     } printf("\n\n");
 }
 

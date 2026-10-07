@@ -1,4 +1,3 @@
-// 4.5 구조체와 매개변수 전달을 이용한 원형 큐(134p)_지금까지의 구조체와는 다름. Element는 이를테면 큐 안에 들어가는 물건의 타입이였다면, 이번 Queue는 그 물건을 담는 큐 전체를 타입으로 만들어 주는것임
 typedef struct Queue{ //지금은 일단 자기참조를 위한 앞 이름을 적어둔거라고만 보면 됨(C 작성 습관같은 것)_5.4 175p '연결된 스택의 구현'에서 볼 예정(모양 비교는 2장 practice/student.c 봐도 됨)
     Element data[MAX_SIZE];
     int front;
@@ -32,6 +31,13 @@ Element dequeue(Queue* q) {
 Element peek(Queue* q) {
     if(is_empty(q)) error("Underflow Error!");
     return q->data[(q->front + 1) % MAX_SIZE]; //(front+1)%MAX_SIZE 바로 확인
+}
+void print_queue(Queue* q) {
+    printf("front=%d, rear=%d --> ", q->front, q->rear);
+    int size =(q->rear - q->front + MAX_SIZE) % MAX_SIZE;
+    for(int i = q->front + 1; i <= q->front + size; i++) {
+        printf("[%d]%2d", i, q->data[i%MAX_SIZE]);
+    } printf("\n");
 }
 
 

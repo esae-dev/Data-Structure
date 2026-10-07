@@ -1,3 +1,4 @@
+// 포인터 개념(2.3 배열이랑 연계해서 나감)
 #include <stdio.h>
 
 void swap_v(int a, int b) {
