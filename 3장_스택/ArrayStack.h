@@ -19,11 +19,11 @@ int is_full()  { //최대에서 -1(-1에서 시작해서 한 칸 더 차지함)�
 }
 void push(Element e) {
     if(is_full()) error("Overflow Error!"); //full이면 error 호출
-    else data[++top] = e; //아닐 경우 top 증가시키고 e 복사
+    else data[++top] = e; //아닐 경우 top 증가시키고 e 복사(그냥 더해주고 리턴)
 }
 Element pop() {
     if(is_empty()) error("Underflow Error!");
-    return data[top--]; //top 요소 반환하고 감소시킴
+    return data[top--]; //top 요소 반환하고 감소시킴(temp에 담아두고 --하고 반환하는 모양이여도 됨)
 }
 Element peek() {
     if(is_empty()) error("Underflow Error!");
