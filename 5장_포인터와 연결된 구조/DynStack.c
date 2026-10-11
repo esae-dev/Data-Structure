@@ -1,4 +1,4 @@
-﻿// 5.3 동적 할당 스택의 활용
+﻿// 5.3 동적 할당 스택의 활용(165p)
 #include <stdio.h>
 #include <stdlib.h>
 

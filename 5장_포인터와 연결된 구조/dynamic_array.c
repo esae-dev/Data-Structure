@@ -1,4 +1,4 @@
-﻿// 5.1 배열을 동적으로 할당하기
+﻿// 5.1 배열을 동적으로 할당하기(162p)
 #include <stdio.h>
 #include <stdlib.h>
 

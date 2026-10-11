@@ -1,3 +1,5 @@
+//정적 스택
+
 Element data[MAX_SIZE];
 int top; //얘넨 그냥 기억해둘 것
 
@@ -20,7 +22,7 @@ int is_full() {
 }
 void push(Element e) { //(손코딩)반환형이 없는데 왜 return을 쓰니..
     if(is_full()) error("Overflow Error!");
-    data[++top] = e; //(손코딩)더한 위치에 저장. 얘 중요하다
+    data[++top] = e; //(손코딩)더한 위치에 저장. 얘 중요하다(특히,e 값을 집어넣어 함에 유의)
 }
 Element pop() {
     if(is_empty()) error("Underflow Error!");
