@@ -8,7 +8,9 @@
 5.5 연결된 스택의 활용(그냥 push pop임)
 5.6 연결된 스택의 size()연산(5.4랑 연계, top에서 시작, link 타고 가다가 NULL에서 종료)
 5.7 스택 요소를 입력순으로 출력(link부터 쭉 처리하는 재귀형)
-5.8 연결된 큐의 구현
+5.8 연결된 큐의 구현(enqueue에선 새 값을 추가해야 하니까, 이전 rear의 link랑 rear를 p에 맞춰주는 작업이 필요하고,
+    dequeue랑 peek는 값을 하나 빼야 하니까, p = rear->next로 rear->next의 다음 노드에 접근할 수 있도록 해줘야 함. 
+    dequeue는 rear->next의 link를 연결하고, peek는 rear->next의 data를 바로 받아오는 것 )
 5.9 
 5.10 
 5.11 
